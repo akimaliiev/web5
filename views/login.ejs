@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/login.css">
+
+
+    <audio id="audio" src="/audios/Correct.mp3"></audio>
+
+
+  </head>
+  <body>
+   <div class="login-box">
+     	<h1>Login</h1>
+     <form id="form" action="/">
+       <div class="user-box">
+           <input type="text" name="login" id="login" onchange="Log()"  />
+           <br/>
+           <label>Username:</label>
+           <img
+        src="https://cdn.icon-icons.com/icons2/894/PNG/128/Tick_Mark_icon-icons.com_69146.png"
+        id="true"
+        height="15px"
+        class="b"
+      />
+       </div>
+       <br>
+       <div class="user-box">
+	       <input type="password" name="password" id="pass1" onchange="Pass()"  />
+           <label>Password:</label>
+           <img
+        src="https://cdn.icon-icons.com/icons2/894/PNG/128/Tick_Mark_icon-icons.com_69146.png"
+        id="true1"
+        height="15px"
+        class="b"
+      />
+       </div>
+       <a>
+           <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <button type="submit" name="submit" id="btn"  class="btttn"> submit</button>
+       </a>
+
+
+         <br />
+         <label id="password1">at least one uppercase</label>
+    <br />
+    <label id="password2">at least one sign</label>
+    <br />
+    <label id="password3">at least one number</label>
+    <br />
+     </form>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="js/log.js"></script>
+
+
+   </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+$("p:eq(1)").mouseover(function(){
+    $("p:eq(1)").css("font-size","16px")
+})
+$("p:eq(1)").mouseout(function(){
+    $("p:eq(1)").css("font-size","")
+})
+$("p:eq(2)").mouseover(function(){
+    $("p:eq(2)").css("font-size","16px")
+})
+$("p:eq(2)").mouseout(function(){
+    $("p:eq(2)").css("font-size","")
+})
+$("p:eq(3)").mouseover(function(){
+    $("p:eq(3)").css("font-size","16px")
+})
+$("p:eq(3)").mouseout(function(){
+    $("p:eq(3)").css("font-size","")
+})
+$("p:eq(4)").mouseover(function(){
+    $("p:eq(4)").css("font-size","16px")
+})
+$("p:eq(4)").mouseout(function(){
+    $("p:eq(4)").css("font-size","")
+})
+$("p:eq(5)").mouseover(function(){
+    $("p:eq(5)").css("font-size","16px")
+})
+$("p:eq(5)").mouseout(function(){
+    $("p:eq(5)").css("font-size","")
+})
+$("p:eq(6)").mouseover(function(){
+    $("p:eq(6)").css("font-size","16px")
+})
+$("p:eq(6)").mouseout(function(){
+    $("p:eq(6)").css("font-size","")
+})
