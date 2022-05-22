@@ -10,7 +10,7 @@ let schema = new mongoose.Schema({
         default: ''
     },
     lastName:  String,
-    phone: String,
+    gpa: String,
 });
 let userModel = new mongoose.model('Users', schema);
 module.exports = userModel;

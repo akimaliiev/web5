@@ -2,12 +2,30 @@ const express = require("express");
 const mongoose = require('mongoose');
 const ejs = require('ejs');
 const app = express();
-//const port = 3000;
+const methodOverride = require('method-override');
+const swaggerUi = require('swagger-ui-express');
+    swaggerDocument = require('./swagger.json');
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
+
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
+
+
+
+
+
+
+app.use(methodOverride('_method'))
+
+const UserRoute = require('./routes/UserRoute')
+app.use('/user',UserRoute)
 
 
 const dbConfig = require('./config/database.config.js');
@@ -43,6 +61,23 @@ app.post('/', (req, res) => {
     create(req,res)
 });
 
+app.get('/read', (req, res) => {
+    findAll(req, res)
+});
+
+app.get('/find', (req, res) => {
+    res.render('find');
+});
+app.get('/findbyemail', (req, res) => {
+    findOne(req,res)
+});
+
+app.get('/delete', (req, res) => {
+    res.render('delete');
+});
+app.get('/deletebyemail', (req, res) => {
+    destroy(req,res)
+});
 
 
 let port = process.env.PORT;

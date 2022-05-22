@@ -1,5 +1,5 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -22,17 +22,11 @@
             -moz-user-select: none;
             user-select: none;
         }
+
         body{
             background-color: #211f24;
             color: white;
         }
-        .form-label {
-            color: white;
-        }
-        .mb-3{
-            color: white;
-        }
-
 
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
@@ -63,8 +57,8 @@
 <main>
     <div class="container">
         <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Create</h4>
-            <form action="/" class="needs-validation" novalidate method="post">
+            <h4 class="mb-3">Find certain user</h4>
+            <form action="user/email" class="needs-validation" novalidate method="get">
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <label for="email" class="form-label">Email</label>
@@ -74,32 +68,11 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <label for="firstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="phone" class="form-label">GPA</label>
-                        <input type="text" class="form-control" name="gpa" id="gpa" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid phone is required.
-                        </div>
-                    </div>
                 </div>
 
                 <hr class="my-4">
 
-                <button type="submit">Create</button>
+                <button type="submit">Find</button>
             </form>
         </div>
     </div>
