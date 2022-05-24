@@ -29,8 +29,43 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/Users"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Users"}
             }
+          }
+        }
+      }
+    },
+    "/user/emailFind": {
+      "get": {
+        "summary": "Find user",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "description": "email of user that we want to find",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User data",
+            "schema": {
+              "example":{
+                "email": "test@gmail.com",
+                "firstName": "testFirstName",
+                "lastName": "testLastName",
+                "gpa": "87775556666"
+              }
+            }
+          },
+          "201":{
+            "description": "User not found"
+          },
+          "404":{
+            "description": "error.message"
           }
         }
       }
@@ -52,7 +87,7 @@
           }
         ],
         "produces": [
-          "application/json/ejs"
+          "application/json"
         ],
         "responses": {
           "200": {
@@ -63,6 +98,78 @@
           },
           "409": {
             "description": "Database error"
+          }
+        }
+      }
+    },
+    "/user/id": {
+      "patch": {
+
+        "summary": "Update user",
+        "parameters": [
+          {
+            "name": "newEmail",
+            "in": "body",
+            "required": true,
+            "description": "Email of user that we want to update",
+            "schema":{
+              "example": {
+                "newEmail": "testNew@gmail.com",
+                "newFirstName": "newFirstName",
+                "newLastName": "newLastname",
+                "newGpa": "645645",
+                "oldEmail": "test@gmail.com"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User updated successfully.",
+            "schema": {
+              "example":{
+                "email": "testCreate@gmail.com"
+              }
+            }
+          },
+          "404":{
+            "description": "User not found"
+          },
+          "500":{
+            "description": "err.message"
+          }
+        }
+      }
+    },
+    "/user/email": {
+      "delete": {
+
+        "summary": "Delete user",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "body",
+            "required": true,
+            "description": "Email of user that we want to delete",
+            "schema":{
+              "example": "test@gmail.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User deleted succesfully!",
+            "schema": {
+              "example":{
+                "email": "testCreate@gmail.com"
+              }
+            }
+          },
+          "404":{
+            "description": "User not found"
+          },
+          "500":{
+            "description": "err.message"
           }
         }
       }
@@ -83,7 +190,7 @@
         "lastName": {
           "type": "string"
         },
-        "phone": {
+        "gpa": {
           "type": "string"
         }
       }

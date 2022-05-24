@@ -79,6 +79,10 @@ app.get('/deletebyemail', (req, res) => {
     destroy(req,res)
 });
 
+app.get('/update', (req, res) => {
+    res.render('update');
+});
+
 
 let port = process.env.PORT;
 if (port == null || port == "") {

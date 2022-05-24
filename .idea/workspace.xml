@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90ee3c8-6c77-43fa-95e7-4041e8bc08d7" name="Changes" comment="Mak">
-      <change afterPath="$PROJECT_DIR$/public/css/headers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/delete.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/find.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/results.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/update.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/UserModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/UserModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/UserRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/UserRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/delete.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/delete.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/find.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/find.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/results.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/results.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/Desktop/untitled6/views",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/untitled6/views&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\untitled6\views" />
@@ -126,7 +122,9 @@
       <workItem from="1652479023790" duration="49000" />
       <workItem from="1652528063761" duration="695000" />
       <workItem from="1652979108454" duration="10761000" />
-      <workItem from="1653248275529" duration="9898000" />
+      <workItem from="1653248275529" duration="12281000" />
+      <workItem from="1653306393130" duration="127000" />
+      <workItem from="1653408828612" duration="7475000" />
     </task>
     <task id="LOCAL-00001" summary="back">
       <created>1652262791799</created>
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652460923574</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Mak">
+      <created>1653262640614</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653262640614</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
